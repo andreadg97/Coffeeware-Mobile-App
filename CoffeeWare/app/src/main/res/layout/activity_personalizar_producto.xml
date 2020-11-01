@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalizarProductoActivity"
+    android:orientation="vertical"
+    android:background="@color/colorFondo">
+
+    <!-- Contenedor inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/deepGrey"
+                    android:text="Ingredientes"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="12sp"/>
+
+                <ListView
+                    android:id="@+id/list_ingredientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Complementos"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/deepGrey"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"/>
+
+                <ListView
+                    android:id="@+id/list_extras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/nombreProducto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/deepGrey"
+                        android:fontFamily="monospace"
+                        android:text="Hamburguesa"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_icon"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/precioBase"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:text="Precio base $50"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/precioTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:text="$58"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:text="Precio personalizado"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Contenedor inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="15dp">
+
+        <!-- Subcontenedor superior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginVertical="15dp">
+
+                <!-- Sub-subcontenedor izquierdo -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/note"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="7dp">
+
+                    <ListView
+                        android:id="@+id/ordenActual"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TOTAL $"
+                            android:layout_weight="4"
+                            android:gravity="end"/>
+
+                        <TextView
+                            android:id="@+id/costoTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="end" />
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Sub-subcontenedor derecho -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/note"
+                android:layout_marginHorizontal="10dp"
+                android:padding="7dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Notas"
+                    android:gravity="top"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Subcontenedor inferior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_anadirOrden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Añadir a orden"
+                android:background="@drawable/round_button_green"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:layout_marginHorizontal="20dp"/>
+
+            <Button
+                android:id="@+id/btn_cancelarOrden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:background="@drawable/round_button_red"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:layout_marginHorizontal="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

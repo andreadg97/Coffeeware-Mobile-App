@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <ListView
+            android:id="@+id/listaOrden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/deepGrey"
+            android:textSize="18sp"
+            android:text="@string/total"/>
+
+        <TextView
+            android:id="@+id/precioTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$150"
+            android:fontFamily="monospace"
+            android:textColor="@color/deepGrey"
+            android:textSize="18sp"
+            android:textDirection="rtl"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#84254a</color>
+    <color name="colorPrimaryDark">#8a6b68</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="defaultText">#000000</color>
+    <color name="lightGrey">#F1F5F3</color>
+    <color name="lightGreen">#98E5B9</color>
+    <color name="indianRed">#CD5C5C</color>
+    <color name="darkGrey">#919BA3</color>
+    <color name="darkBrown">#592B0D</color>
+    <color name="deepGrey">#42474b</color>
+    <color name="azulClarito">#c6d0dd</color>
+    <color name="colorFondo">#F1EEF4</color>
+    <color name="verdeBoton">#6AD63F</color>
+    <color name="rojoBoton">#B3343F</color>
+    <color name="amarilloBoton">#FFED78</color>
+</resources>

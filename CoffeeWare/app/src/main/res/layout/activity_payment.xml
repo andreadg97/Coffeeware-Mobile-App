@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".paymentActivity"
+    android:paddingHorizontal="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagar Orden"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textColor="@color/deepGrey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:text="@string/consumidor"
+            android:textColor="@color/deepGrey"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textColor="@color/deepGrey"
+            android:text="Armando"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginVertical="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_orden"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/line"
+            android:layout_marginVertical="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/deepGrey"
+            android:textSize="18sp"
+            android:text="@string/total"/>
+
+        <TextView
+            android:id="@+id/precioTotalPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$150"
+            android:fontFamily="monospace"
+            android:textColor="@color/deepGrey"
+            android:textSize="18sp"
+            android:textDirection="rtl"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:text="@string/CuantoPaga"
+            android:textColor="@color/deepGrey"
+            />
+
+        <EditText
+            android:id="@+id/txtview_pago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/defaultText"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:text="@string/cambio"
+            android:textColor="@color/deepGrey"
+            />
+
+        <TextView
+            android:id="@+id/txtview_cambio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="monospace"
+            android:text="$150"
+            android:textColor="@color/deepGrey"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="25dp"
+        android:layout_marginTop="45dp">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textSize="11sp"
+            android:id="@+id/btnCancelar"
+            android:background="@drawable/round_button_red"
+            android:textColor="@color/defaultText"
+            android:text="@string/cancelarPago"
+            android:layout_marginRight="25dp"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textSize="11sp"
+            android:id="@+id/btnConfirm"
+            android:background="@drawable/round_button_green"
+            android:textColor="@color/defaultText"
+            android:text="@string/pagarOrden"/>
+    </LinearLayout>
+
+
+</LinearLayout>

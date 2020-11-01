@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorFondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2.5">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <TableRow>
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_categorias"
+                    android:src="@drawable/ic_storage_black_24dp"
+                    android:background="@color/colorFondo"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="200dp"
+                    android:layout_weight="3"/>
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_productos"
+                    android:src="@drawable/ic_store"
+                    android:background="@color/colorFondo"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:layout_weight="3"/>
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_ordenes"
+                    android:src="@drawable/book_icon"
+                    android:background="@color/colorFondo"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:layout_weight="3"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textview_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Alimentos"
+            android:textColor="@color/deepGrey"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="monospace"
+            android:background="@color/colorFondo"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_izquierda"
+            android:src="@drawable/left_icon"
+            android:background="@color/colorFondo"
+            android:layout_weight="6"
+            android:layout_gravity="center"/>
+
+        <GridView
+            android:id="@+id/gridview_productos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:numColumns="2"
+            android:paddingHorizontal="5dp"
+            android:layout_marginVertical="10dp"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_derecha"
+            android:src="@drawable/right_icon"
+            android:background="@color/colorFondo"
+            android:layout_weight="6"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2.5"
+        android:layout_gravity="bottom"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/textview_numeroproductos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:fontFamily="monospace"
+            android:background="@color/colorFondo"
+            android:text="0 productos"
+            android:textColor="@color/deepGrey"
+            android:textSize="18dp"
+            android:paddingRight="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:textSize="12dp"
+            android:textColor="#fff"
+            android:background="@drawable/boton_redondo_morado"
+            android:id="@+id/btn_ordenactual"
+            android:text="Ir a la orden"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmOrder"
+    android:orientation="vertical"
+    android:paddingHorizontal="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editarOrden"
+        android:textSize="22sp"
+        android:textColor="@color/deepGrey"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="5dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/list_ordenEdit" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/line"
+            android:layout_marginVertical="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textColor="@color/deepGrey"
+                android:textSize="18sp"
+                android:text="@string/total"/>
+
+            <TextView
+                android:id="@+id/precioTotalEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$150"
+                android:fontFamily="monospace"
+                android:textColor="@color/deepGrey"
+                android:textSize="18sp"
+                android:textDirection="rtl"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:text="@string/consumidor"
+            android:textColor="@color/deepGrey"
+            />
+
+        <EditText
+            android:id="@+id/edit_consumidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/defaultText"
+            android:textSize="18sp"
+            android:text=""
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <Button
+            android:id="@+id/btn_guardarcambios"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button_green"
+            android:backgroundTint="#edff0f"
+            android:text="@string/guardarCambios"
+            android:textColor="@color/defaultText"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="55dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_añadirproducto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_add_circle_outline_black_24dp"
+                android:textColor="@color/defaultText"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="39dp"
+                android:fontFamily="monospace"
+                android:text="@string/añadirProductos"
+                android:textColor="@color/deepGrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_cancelar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/cancel_vector"
+                android:textColor="@color/defaultText"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:gravity="end"
+                android:text="@string/cancelarOrden"
+                android:textAlignment="textEnd"
+                android:textColor="@color/deepGrey"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

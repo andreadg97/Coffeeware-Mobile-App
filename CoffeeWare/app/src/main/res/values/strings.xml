@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CoffeeWare</string>
+    <string name="confirmation">Verifica la orden</string>
+    <string name="total">Total</string>
+    <string name="consumidor">Consumidor</string>
+    <string name="enviarOrden">Enviar orden</string>
+    <string name="editarOrden">Editar orden</string>
+    <string name="guardarCambios">Guardar cambios</string>
+    <string name="añadirProductos">Añadir más productos</string>
+    <string name="volverMenu">Volver al menú</string>
+    <string name="cancelarOrden">Cancelar orden</string>
+    <string name="CuantoPaga">¿Con cuanto paga?</string>
+    <string name="cambio">Cambio</string>
+    <string name="cancelarPago">Cancelar pago</string>
+    <string name="pagarOrden">Pagar Orden</string>
+    <string name="agregarProducto">Agregar Producto</string>
+    <string name="Ordenes">Lista de ordenes</string>
+</resources>

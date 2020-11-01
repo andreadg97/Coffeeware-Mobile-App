@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="15dp"
+    android:layout_marginHorizontal="15dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_redondo_blanco"
+        android:padding="10dp"
+        android:layout_marginVertical="15dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/deepGrey"
+                    android:fontFamily="monospace"
+                    android:textSize="15dp"
+                    android:textAlignment="textEnd"
+                    android:gravity="start"
+                    android:text="Producto: "
+                    android:layout_weight="3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/deepGrey"
+                    android:fontFamily="monospace"
+                    android:textSize="15dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/textview_nombreproducto"
+                    android:text="Frape"
+                    android:layout_weight="1"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/deepGrey"
+                    android:textAlignment="textEnd"
+                    android:gravity="start"
+                    android:text="Categoria: "
+                    android:layout_weight="3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview_categoria"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/deepGrey"
+                    android:textAlignment="textStart"
+                    android:gravity="start"
+                    android:text="Alimentos"
+                    android:layout_weight="1"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/deepGrey"
+                    android:textAlignment="textEnd"
+                    android:gravity="start"
+                    android:text="Precio: "
+                    android:layout_weight="3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview_Precio"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/deepGrey"
+                    android:textAlignment="textStart"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="$15"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_weight="3"
+                    android:text="ID: "
+                    android:textAlignment="textEnd"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="start"
+                    android:textColor="@color/deepGrey"
+                    android:fontFamily="monospace"
+                    android:textAlignment="textStart"
+                    android:text="1"
+                    android:id="@+id/textview_idproducto"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit_black"
+                android:layout_marginHorizontal="5dp"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_editarProducto"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_black"
+                android:layout_marginHorizontal="5dp"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:onClick="eliminarProducto"
+                android:id="@+id/btn_eliminarProducto"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
